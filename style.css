@@ -4,7 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 100vh; 
+  min-height: 100vh;
+  position: relative; 
 }
 
 .jumbotron {
@@ -21,14 +22,23 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  height: 75px;
+  height: 3rem;
   width: 100%;
+  background-color: #07173D;
+  color: #7585AB;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
   background-color: #07173D;
   color: #7585AB;
 }
 
 footer img {
   margin-left: 10px;
+  align-items: center;
 }
