@@ -16,7 +16,7 @@ body {
 
 #chartArea {
   width: 100%;
-  min-height: 800;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -25,20 +25,7 @@ footer {
   align-items: center;
   height: 3rem;
   width: 100%;
-  background-color: #07173D;
-  color: #7585AB;
-  position: absolute;
+  background-color: #b8daff;
+  color: #004085;
   bottom: 0;
-}
-
-footer p {
-  display: flex;
-  align-items: center;
-  background-color: #07173D;
-  color: #7585AB;
-}
-
-footer img {
-  margin-left: 10px;
-  align-items: center;
 }

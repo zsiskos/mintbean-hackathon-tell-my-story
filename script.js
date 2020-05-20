@@ -4,16 +4,16 @@ google.charts.setOnLoadCallback(drawSeriesChart);
 function drawSeriesChart() {
   let data = google.visualization.arrayToDataTable([
     ['ID',              'Age',    'Impact',      'How',             'Enjoyment'],
-    ['Appendix',          16,       1,      'Out of my control',        3],
+    ['Appendectomy',          16,       1,      'Out of my control',        2],
     ['Got Robbed',        4,        5,      'Out of my control',        1],
-    ['Married',           25,       5,      'A choice',                 3],
+    ['Wedding',           25,       5,      'A choice',                 3],
     ['Motorcycle',        32,       2,      'A choice',                 3],
     ['Skydive',           33,       3,      'A choice',                 5],
     ['Northern Lights',   39,       2,      'A choice',                 5],
     ['Dad died',          28,       5,      'Out of my control',        1],
-    ['Learned to Code',   40,       5,      'A choice',                 4],
+    ['Learned to Code',   40,       4.5,      'A choice',                 4],
     ['3rd tattoo',        31,       1,      'A choice',                 3],
-    ['Learn to hunt',     37,       2,      'A choice',                 5],
+    ['Learn to hunt',     36,       4,      'A choice',                 5],
     ['Got Spanky',        27,       2,      'A choice',                 5],
     ['Bought 1st car',    24,       1,      'A choice',                 2],
     ['1st Apartment',     19,       3,      'A choice',                 3],
@@ -21,8 +21,12 @@ function drawSeriesChart() {
   ]);
 
   let options = {
+    title: 'Correlation b/w major life experiences, age, impact, and enjoyment',
     height: 800,
-    hAxis: {title: 'Age'},
+    hAxis: {
+      title: 'Age',
+      maxValue: 45,
+    },
     vAxis: {
       title: 'Impact',
       maxValue: 6
