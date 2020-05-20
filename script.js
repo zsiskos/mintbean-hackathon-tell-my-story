@@ -7,9 +7,9 @@ function drawSeriesChart() {
   var data = google.visualization.arrayToDataTable([
     ['ID',        'Age',    'Impact',      'How',              'Enjoyment'],
     ['Robbed',       4,        5,      'Out of my control',       1],
-    ['Married',      25,       5,      'A choice',                 7],
-    ['Motorcycle',   32,       2,      'A choice',                 7],
-    ['Skydive',      27,       3,      'A choice',                10],
+    ['Married',      25,       5,      'A choice',                 3],
+    ['Motorcycle',   32,       2,      'A choice',                 3],
+    ['Skydive',      27,       3,      'A choice',                5],
   ]);
 
   let options = {

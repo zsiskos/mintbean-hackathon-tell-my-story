@@ -5,25 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel='stylesheet' type='text/css' href='style.css' />
-  <script src="script.js" defer></script>
   <title>Hackathon: My Life in Bubbles</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <img src='assets/nobackground.png'class="img-fluid" alt="woman rock climbing" />
-    My Life in Bubbles
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container header">
+      <h1 class="display-4">My Life in Bubbles</h1>
+      <p class="lead">Milestones in my life and correlation of their impact & enjoyment.</p>
+    </div>
   </div>
-  <div class="container-sm alert alert-dark" role="alert">
+  <div class="container-sm text-center">
+   My Life in Bubbles
+  </div>
+  <div class="container-sm alert alert-dark mx-auto" role="alert">
     Blurb about the website
   </div>
-  <div id='chartArea' class="container">
-
+  <div id='chartArea' class="container-sm">
+    
   </div>
-
-  <footer>
-    Info about me
+  
+  <footer class="">
+    <p>
+      <a href="https://github.com/zsiskos/SEI-project01" target="_blank">Built by zoë.Supernova </a>
+      <img src="assets/GitHub-Mark-Light-32px.png" alt="github logo"/>
+    </p>
   </footer>
-
+  
+  <script src="script.js" defer></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="https://www.google.com/jsapi">
     google.charts.load('current', {'packages':['corechart']});
