@@ -14,9 +14,9 @@ body {
   background-size: 100%;
 }
 
-.woman {
-  max-width: 70%;
-  max-height: 70%;
+#chartArea {
+  width: 100%;
+  min-height: 800;
 }
 
 footer {
