@@ -5,7 +5,7 @@ function drawSeriesChart() {
   let data = google.visualization.arrayToDataTable([
     ['ID',              'Age',    'Impact',      'How',             'Enjoyment'],
     ['Appendectomy',          16,       1,      'Out of my control',        2],
-    ['Got Robbed',        4,        5,      'Out of my control',        1],
+    ['Got Robbed',        6,        5,      'Out of my control',        1],
     ['Wedding',           25,       5,      'A choice',                 3],
     ['Motorcycle',        32,       2,      'A choice',                 3],
     ['Skydive',           33,       3,      'A choice',                 5],
