@@ -76,5 +76,13 @@ p {
 footer {
   grid-area: footer;
   background: #0a425c;
+}
 
+footer > a {
+  text-decoration: none;
+  color: #C9EBF9;
+}
+
+footer > a:hover {
+  color: #ABB2B6;
 }
