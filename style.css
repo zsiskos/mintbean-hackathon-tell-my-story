@@ -12,12 +12,18 @@ body {
     "hero hero hero hero" 30vh
     ". sidebar main ." auto
     "footer footer footer footer" 5em
-    / 0.5fr minmax(10em, 2fr) 5fr 0.5fr
+    / 0.5fr minmax(10em, 2fr) 5fr 0.5fr;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
   grid-area: header;
   background: #0a425c;
+}
+
+.header-title {
+  font-size: 1rem;
 }
 
 .header,
@@ -41,11 +47,20 @@ p {
   background-size: 100%;
 }
 
+.hero-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+  margin: 0;
+}
+
 .sidebar {
   grid-area: sidebar;
   background: #ABB2B6;
-  padding: 
+  padding: 2em;
+}
 
+.sidebar-title {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .main {
