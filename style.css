@@ -15,6 +15,7 @@ body {
     / 0.5fr minmax(10em, 2fr) 5fr 0.5fr;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .header {
@@ -22,8 +23,10 @@ body {
   background: #0a425c;
 }
 
-.header-title {
+.header > p {
   font-size: 1rem;
+    margin: 0px;
+    color: #C9EBF9;
 }
 
 .header,
@@ -33,11 +36,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-p {
-  margin: 0px;
-  color: #C9EBF9;
 }
 
 .hero {
@@ -50,6 +48,7 @@ p {
 .hero-title {
   font-family: 'Bebas Neue', cursive;
   font-size: 4rem;
+  color: #0a425c;
   margin: 0;
 }
 
@@ -61,6 +60,8 @@ p {
 
 .sidebar-title {
   font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .main {
@@ -81,8 +82,17 @@ footer {
 footer > a {
   text-decoration: none;
   color: #C9EBF9;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
 }
 
 footer > a:hover {
   color: #ABB2B6;
+  position: relative;
+}
+
+footer > a::after {
+  content: url(assets/GitHub-Mark-Light-32px.png);
+  width: 100%;
+  height: 100%;
 }
