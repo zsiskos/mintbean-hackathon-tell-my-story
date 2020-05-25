@@ -1,31 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  background-color: #f7f0f0;
+  display: grid;
+  grid-template: 
+    "header header header header" 2.5em
+    "hero hero hero hero" 20vh
+    ". sidebar main ." auto
+    "footer footer footer footer" 5em
+    / 0.5fr minmax(15em, 2fr) 5fr 0.5fr
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.header,
+.hero,
+.footer {
   display: flex;
-  flex-direction: column;
-  width: auto;
-  min-height: 100vh;
-  position: relative; 
+  align-items: center;
+  justify-content: center;
 }
 
-.jumbotron {
-  background-image: url('assets/bubble\ blower_EEZY_RMPL-01.svg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+p {
+  margin: 0px;
 }
 
-#chartArea {
-  width: 100%;
-  margin-bottom: 10px;
+.hero {
+  grid-area: hero;
+  
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  width: 100%;
-  background-color: #b8daff;
-  color: #004085;
-  bottom: 0;
+  grid-area: footer;
+
 }
