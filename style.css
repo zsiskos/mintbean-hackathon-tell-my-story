@@ -9,43 +9,57 @@ body {
   display: grid;
   grid-template: 
     "header header header header" 2.5em
-    "hero hero hero hero" 20vh
+    "hero hero hero hero" 30vh
     ". sidebar main ." auto
     "footer footer footer footer" 5em
-    / 0.5fr minmax(15em, 2fr) 5fr 0.5fr
+    / 0.5fr minmax(10em, 2fr) 5fr 0.5fr
 }
 
 .header {
   grid-area: header;
-
+  background: #0a425c;
 }
 
 .header,
 .hero,
-.footer {
+footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 p {
   margin: 0px;
+  color: #C9EBF9;
 }
 
 .hero {
   grid-area: hero;
-  
+  background-image: url('assets/bubble\ blower_EEZY_RMPL-01.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .sidebar {
   grid-area: sidebar;
+  background: #ABB2B6;
+  padding: 
+
 }
 
 .main {
   grid-area: main;
 }
 
+#chartArea {
+  -webkit-box-shadow: 5px 5px 15px 5px #0a425c; 
+  box-shadow: 5px 5px 15px 5px #0a425c;
+  margin: 2rem 0rem 2rem 2rem;
+}
+
 footer {
   grid-area: footer;
+  background: #0a425c;
 
 }
