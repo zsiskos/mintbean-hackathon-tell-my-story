@@ -18,6 +18,14 @@ body {
     margin: 0;
 }
 
+.header,
+.hero,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .header {
   grid-area: header;
   background: #0a425c;
@@ -27,15 +35,6 @@ body {
   font-size: 1rem;
     margin: 0px;
     color: #C9EBF9;
-}
-
-.header,
-.hero,
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero {
@@ -50,6 +49,10 @@ footer {
   font-size: 4rem;
   color: #0a425c;
   margin: 0;
+}
+
+.hero > a {
+  display: flex;
 }
 
 .sidebar {
