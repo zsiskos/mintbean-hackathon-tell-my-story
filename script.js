@@ -4,7 +4,7 @@ google.charts.setOnLoadCallback(drawSeriesChart);
 function drawSeriesChart() {
   let data = google.visualization.arrayToDataTable([
     ['ID',              'Age',    'Impact',      'How',             'Enjoyment'],
-    ['Appendectomy',      16,       0.5,      'Out of my control',        2],
+    ['Appendectomy',      16,       1,      'Out of my control',        2],
     ['Got Robbed',        6,        5,      'Out of my control',        1],
     ['Wedding',           25,       5,      'A choice',                 3],
     ['Motorcycle',        32,       1.5,      'A choice',                 3],
