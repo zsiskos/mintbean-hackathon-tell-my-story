@@ -4,17 +4,17 @@ google.charts.setOnLoadCallback(drawSeriesChart);
 function drawSeriesChart() {
   let data = google.visualization.arrayToDataTable([
     ['ID',              'Age',    'Impact',      'How',             'Enjoyment'],
-    ['Appendectomy',      16,       1,      'Out of my control',        2],
+    ['Appendectomy',      16,       0.5,      'Out of my control',        2],
     ['Got Robbed',        6,        5,      'Out of my control',        1],
     ['Wedding',           25,       5,      'A choice',                 3],
-    ['Motorcycle',        32,       2,      'A choice',                 3],
-    ['Skydive',           33,       3,      'A choice',                 5],
-    ['Northern Lights',   39,       2,      'A choice',                 5],
+    ['Motorcycle',        32,       1.5,      'A choice',                 3],
+    ['Skydive',           33,       2.25,      'A choice',                 5],
+    ['Northern Lights',   39,       3.75,      'A choice',                 5],
     ['Dad died',          28,       5,      'Out of my control',        1],
     ['Learned to Code',   40,       4.5,      'A choice',                 4],
     ['3rd tattoo',        31,       1,      'A choice',                 3],
-    ['Learn to hunt',     36,       4,      'A choice',                 5],
-    ['Got Spanky',        27,       2,      'A choice',                 5],
+    ['Learn to hunt',     36,       4,      'A choice',                 4],
+    ['Got Spanky',        27,       3.2,      'A choice',                 5],
     ['Bought 1st car',    24,       1,      'A choice',                 2],
     ['1st Apartment',     19,       3,      'A choice',                 3],
     ['#Vanlife',          37,       5,      'A choice',                 5],
@@ -29,7 +29,8 @@ function drawSeriesChart() {
     },
     vAxis: {
       title: 'Impact',
-      maxValue: 6
+      maxValue: 5.5,
+      minValue: 1,
     },
     bubble: {
       textStyle: {
@@ -37,6 +38,14 @@ function drawSeriesChart() {
         auraColor: 'none'
       }
     },
+    colors: [
+      '#0a425c',
+      '#C9EBF9'
+    ],
+    legend: {
+      position: 'bottom',
+    }
+    
           
   };
 
