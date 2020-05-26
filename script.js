@@ -18,6 +18,7 @@ function drawSeriesChart() {
     ['Bought 1st car',    24,       1,      'A choice',                 2],
     ['1st Apartment',     19,       3,      'A choice',                 3],
     ['#Vanlife',          37,       5,      'A choice',                 5],
+    ['Covid-19 Quarantine', 40,     5,      'Out of my control',        2.5],
   ]);
 
   let options = {
@@ -26,6 +27,7 @@ function drawSeriesChart() {
     hAxis: {
       title: 'Age',
       maxValue: 45,
+      minValue: 1
     },
     vAxis: {
       title: 'Impact',
@@ -35,7 +37,8 @@ function drawSeriesChart() {
     bubble: {
       textStyle: {
         fontSize: 11,
-        auraColor: 'none'
+        auraColor: 'none',
+        
       }
     },
     colors: [
@@ -44,17 +47,9 @@ function drawSeriesChart() {
     ],
     legend: {
       position: 'bottom',
-    }
-    
-          
+    }       
   };
-
+  
   let chart = new google.visualization.BubbleChart(document.getElementById('chartArea'));
   chart.draw(data, options);
-
-  
 }
-
-$(window).resize(function(){
-  drawSeriesChart();
-});
