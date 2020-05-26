@@ -1,4 +1,4 @@
-# My First MintBean Hackathon: Use Data to Tell My Story
+# My First Mintbean Hackathon: Use Data to Tell My Story
 I particpated in my first hackathon, which had a smiple objective: In 4 hours, build a website that uses Google charts to tell my life story. 
 
 *To read more about the challenge, [check this out](https://github.com/MintbeanHackathons/2020-05-20-tell-your-story-in-data/blob/master/Challenge.md "Hackathon instructions")*
