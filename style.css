@@ -51,8 +51,33 @@ footer {
   margin: 0;
 }
 
-.hero > a {
-  display: flex;
+.hero-btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: #0a425c;
+  font-size: 1rem;
+  padding: .25em;
+  margin-bottom: 0.5em;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  background: #ABB2B6;
+  height: .75rem;
+  width: 38%;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.hero-btn:hover::after,
+.hero-btn:focus::after {
+  transform: scale(2.75, 2);
+  transform-origin: bottom left;
+
 }
 
 .sidebar {
@@ -91,7 +116,6 @@ footer > a {
 
 footer > a:hover {
   color: #ABB2B6;
-  position: relative;
 }
 
 footer > a::after {
